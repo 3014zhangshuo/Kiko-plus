@@ -1,11 +1,11 @@
 ---
 layout: post
-title: '方法:购物车计算总价'
+title: '购物车计算总价'
 date: 2016-11-03 09:37
 comments: true
-categories: 
+tags: [方法,全栈营] 
 ---
-```
+```ruby
 <% sum = 0 %>
 <% current_user.cart_item.each do |cart_item| %>
   <% sum = sum + cart_item.quantity * cart_item.product.price %>
@@ -13,7 +13,7 @@ categories:
 ```
 把Refactor放到Helper里面
 <%= render_cart_total_price(current_cart) %>
-```
+```ruby
 module CartsHelper
   def render_cart_total_price(cart)
     sum = 0 
@@ -29,7 +29,7 @@ module CartsHelper
 def render_cart_total_price(cart)
   cart.total_price 
 end
-```
+```ruby
 def total_price 
   sum = 0 
   cart_item.each do |cart_item|
