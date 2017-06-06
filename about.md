@@ -3,4 +3,4 @@ title: About
 permalink: /about/
 ---
 
-### 为成为架构师而码字
+### 为了架构师！！
