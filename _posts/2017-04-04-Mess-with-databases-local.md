@@ -1,4 +1,5 @@
-﻿layout: post
+﻿---
+layout: post
 title: 'Mess with databases local'
 date: 2017-05-29 18:08
 comments: true
@@ -26,7 +27,8 @@ ar_internal_metadata with the following command:
 `bin/rails db:environment:set RAILS_ENV=development`
 With that database rake tasks to not complain anymore if you mess with
 databases locally.
-https://blog.schmijos.ch/2016/11/22/active-record-database-env-check/
+
+[article](https://blog.schmijos.ch/2016/11/22/active-record-database-env-check/)
 
 
 
