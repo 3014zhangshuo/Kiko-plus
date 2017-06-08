@@ -4,7 +4,6 @@ title: '配置git diff的输出颜色'
 date: 2017-06-08 10:40
 comments: true
 tags: [Git]
-comments: true
 share: true
 ---
 ### 将配置添加到~/.gitconfig
