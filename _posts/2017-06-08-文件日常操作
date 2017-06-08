@@ -1,0 +1,37 @@
+---
+layout: post
+title: '文件日常操作'
+date: 2017-06-08 12:19
+comments: true
+tags: [Shell]
+comments: true
+share: true
+---
+#### ls
+1. `ls -l` 列出文件详细信息
+2. `ls -lh` 将文件大小可视化
+3. `ls -lhS` 将文件按内存从大到小排列 不会考虑文件夹内部的大小
+#### du (disk usage)
+1. `du` 直接列出文件夹内所有文件大小
+2. `du -h` 让文件大小可视化 <mark>方式显示目录的大小</mark>
+3. `du -ah` 列出文件及文件的大小
+4. `du -sh *` 列出所有目录的大小
+5. `du -s` 列出当前目录所有内容的总大小
+#### mv
+1. 修改文件名字 `mv a.rb b.rb` 
+2. 移动文件 `mv a.rb /keep`
+#### cat 
+查看文件内容
+#### head tail 
+查看文件内容，拥有参数`-n 行数`和`-f`
+#### grep 过滤文本
+1. `grep 关键字 文件`
+2. `grep -i`忽略大小写
+3. `grep -v`没有被匹配
+4. `grep -n`查看匹配行数
+5. `tail -f test.log | grep -i error` 通过管道的方法把前值传递给后值
+6. `tail -f test.log | grep -B 10 -A 10 error` 看上下10行的信息
+7. fgrep 和 egrep 简化版 和 正则增强版
+#### less 
+less 文件名 只会打印一屏幕的文本信息
+[摘抄于](http://www.php101.cn/2015/02/26/Linux%E4%B8%8B%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E5%92%8C%E6%96%87%E4%BB%B6%E5%A4%B9%E5%A4%A7%E5%B0%8F/)
