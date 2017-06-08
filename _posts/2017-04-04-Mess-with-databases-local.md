@@ -21,17 +21,13 @@ variable:
 DISABLE_DATABASE_ENVIRONMENT_CHECK=1
 ```
 #### Google结果
-google了一下，还真有人跟我是一样的问题，下面是他的解释
-```
-This is a protection so that you don’t delete any production data by accident.
-But what happened to me was that I somewhen reconfigured my local system
-to be productive (probably to test something with real data).
-It is possible to reconfigure the database environment in
-ar_internal_metadata with the following command:
-`bin/rails db:environment:set RAILS_ENV=development`
-With that database rake tasks to not complain anymore if you mess with
-databases locally.
-```
+google了一下，还真有人跟我是一样的问题，下面是他的解释：</ br>
+
+This is a protection so that you don’t delete any production data by accident.</ br>
+But what happened to me was that I somewhen reconfigured my local system to be productive (probably to test something with real data). </ br>
+It is possible to reconfigure the database environment in ar_internal_metadata with the following command:`bin/rails db:environment:set RAILS_ENV=development`</ br>
+With that database rake tasks to not complain anymore if you mess with databases locally.
+
 [解答](https://blog.schmijos.ch/2016/11/22/active-record-database-env-check/)
 
 
