@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 'Sidekiq Monit'
-date: 2017-06-12 16:19
+date: 2017-06-14 16:19
 comments: true
-tags: [ROR]
+tags: [ROR,sidekiq]
 comments: true
 share: true
 ---
