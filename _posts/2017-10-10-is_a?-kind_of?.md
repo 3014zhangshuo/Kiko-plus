@@ -9,6 +9,7 @@ share: true
 ---
 * `is_a?`和`kind_of?`用法相同，传递一个class，判断对象是否为class的instance或者subclass的instance
 * `instance_of?`直接判断是否为class的instance，不包含subclass
+
 ```
 kind_of? and is_a? are synonymous. instance_of? is different from the other two in that it only returns true if the object is an instance of that exact class, not a subclass.
 

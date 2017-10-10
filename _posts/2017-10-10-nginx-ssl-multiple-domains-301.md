@@ -11,6 +11,7 @@ share: true
 * 网站拥有多个domain，但需要统一跳转到一个
 * 需要重定向 443 端口
 解法：
+
 ```
 server {
     listen         *:443 ssl;
@@ -36,4 +37,5 @@ server {
     return         301 https://www.domain1.com$request_uri;
 }
 ```
+
 [原文](https://www.digitalocean.com/community/questions/nginx-ssl-multiple-domains)
