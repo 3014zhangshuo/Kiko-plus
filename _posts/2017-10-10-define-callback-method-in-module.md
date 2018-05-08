@@ -7,9 +7,9 @@ tags: [ruby]
 comments: true
 share: true
 ---
-### 为了确定简历的更新时间，在相关的所属model里面加入callbakc method来同步更新简历的updated_at。相同的方法不要重复自身，可以使用rails concern的功能来添加。
+###### 为了确定简历的更新时间，在相关的所属model里面加入callbakc method来同步更新简历的updated_at。相同的方法不要重复自身，可以使用rails concern的功能来添加。(Rails belong_to中touch: true就可解决)
 
-#### only ruby
+- only ruby
 
 ```
 module MyModule
@@ -25,7 +25,7 @@ module MyModule
 end
 ```
 
-#### rails concern feature
+- rails concern
 
 ```
 module MyModule
