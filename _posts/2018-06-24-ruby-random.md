@@ -11,8 +11,8 @@ share: false
 `rand #=> 0.13002209003779552`
 
 ## Rand with limit
-`rand 100 #=> 41`
-`rand 100..200 #=> 141`
+- `rand 100 #=> 41`
+- `rand 100..200 #=> 141`
 
 ## SecureRandom
 ```
