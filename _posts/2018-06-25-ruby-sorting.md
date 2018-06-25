@@ -3,7 +3,7 @@ layout: post
 title: 'Ruby Sorting'
 date: 2018-06-25 00:00:00
 comments: true
-tags: [NodeJS]
+tags: [Ruby]
 share: false
 ---
 
