@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Two Divs On The Same Line'
+title: 'Css: Two Divs On The Same Line'
 date: 2018-06-26 15:00:00
 comments: true
 tags: [CSS]

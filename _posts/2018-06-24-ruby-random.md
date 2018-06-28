@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Ruby Random'
+title: 'Ruby: Random'
 date: 2018-06-24 00:00:00
 comments: true
 tags: [Ruby]

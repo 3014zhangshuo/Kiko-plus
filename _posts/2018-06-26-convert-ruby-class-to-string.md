@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'String to Class And Class to String'
+title: 'Ruby: String to Class And Class to String'
 date: 2018-06-25 00:00:00
 comments: true
 tags: [Ruby]

@@ -3,7 +3,7 @@ layout: post
 title: 'Ubuntu VM Run Npm Script No Hang Up'
 date: 2018-06-26 15:00:00
 comments: true
-tags: [CSS]
+tags: [node]
 share: false
 ---
 `forever start -c "npm run ts-node" /home/apps/file-wechaty/file.ts` throw `npm ERR! path /home/user/package.json`

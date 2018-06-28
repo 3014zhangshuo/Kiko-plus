@@ -1,11 +1,12 @@
 ---
 layout: post
-title: 'PG Array Functions - array_length'
+title: 'PG: Array Functions - array_length'
 date: 2018-06-27 17:30:00
 comments: true
 tags: [pg]
 share: false
 ---
+
 dimension(维)
 
 ### Explanation

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Ruby Sorting'
+title: 'Ruby: Sorting'
 date: 2018-06-25 00:00:00
 comments: true
 tags: [Ruby]

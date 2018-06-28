@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Git cherry-pick Multiple Commits'
+title: 'Git: cherry-pick Multiple Commits'
 date: 2018-06-27 17:00:00
 comments: true
 tags: [git]

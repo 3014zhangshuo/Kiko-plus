@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Block Arguments'
+title: 'Ruby: Block Arguments'
 date: 2018-06-27 00:00:00
 comments: true
 tags: [Ruby]
