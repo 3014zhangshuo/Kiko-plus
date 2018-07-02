@@ -6,7 +6,7 @@ comments: true
 tags: [rails]
 share: false
 ---
-app/models/daily.rb
+- app/models/daily.rb
 
 ```
 module Daily
@@ -16,7 +16,8 @@ module Daily
 end
 ```
 
-app/models/daily/order.rb
+- app/models/daily/order.rb
+
 ```
 class Daily::Order < ApplicationRecord
 end
