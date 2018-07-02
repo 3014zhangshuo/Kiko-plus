@@ -114,4 +114,14 @@ puts eat(['cheese', 'steak', 'wine']) { puts "Mmm" }
 puts eat(['cheese'])
 # >> delicious!
 ```
+
+### block default value
+```
+a = Proc.new { |a, b=2| puts a+b }
+a = lambda { |a, b=2| puts a+b }
+a.call(1) => 3
+
+
+```
 [S](http://www.rakeroutes.com/blog/anonymous-blocks-as-function-arguments-in-ruby/)
+[default_value](https://stackoverflow.com/questions/1735657/is-it-possible-to-define-a-block-with-default-arguments-in-ruby)
