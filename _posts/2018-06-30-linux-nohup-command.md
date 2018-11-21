@@ -25,7 +25,15 @@ share: false
 
 - `nohup ./command.sh >output 2>output` 会导致 >output 2>output 文件output被两次打开，而stdout和stderr将会竞争覆盖
 
+### Other Commands
+- `jobs` 查看当前有多少在后台运行的命令 `jobs -l`
+- `ctrl + z` 可以将一个正在前台执行的命令放到后台，并且暂停。
+- `fg %jobnumber` 将后台中的命令调至前台继续运行(jobnumber不是pid)
+- `bg %jobnumber` 将一个在后台暂停的命令，变成继续执行(jobnumber不是pid)
+- `kill %jobnumber` or `kill pid`
+
 [S](https://www.jianshu.com/p/b5118b70ee1a)
+[S](https://my.oschina.net/huxuanhui/blog/13844)
 
 Tips
 ```
