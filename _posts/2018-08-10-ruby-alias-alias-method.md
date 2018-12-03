@@ -7,7 +7,7 @@ tags: [ruby]
 share: false
 ---
 ### Usage of alias
-```
+```ruby
 class User
 
   def full_name
@@ -21,7 +21,7 @@ User.new.name #=>Johnnie Walker
 ```
 
 ### Usage of alias_method
-```
+```ruby
 class User
   def full_name
     puts "Johnnie Walker"
@@ -32,7 +32,7 @@ end
 ```
 
 ### Scoping with alias
-```
+```ruby
 class User
 
   def full_name
@@ -55,7 +55,7 @@ Developer.new.name #=> 'Gekky geek'
 ```
 In the above case method `name` picks the method `full_name` defined in `Developer` class.
 
-```
+```ruby
 class User
 
   def full_name
