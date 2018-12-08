@@ -8,10 +8,15 @@ share: false
 ---
 ### Javascript set the cookie
 
-`document.cookie = name + '=' + value + '; path=/'`
+```js
+document.cookie = name + '=' + value + '; path=/'
+```
 
 ### Rails get the cookie
 
-`cookies['foo'] = 'bar'`
+```ruby
+cookies['foo'] = 'bar'
+```
 
-[1](https://stackoverflow.com/questions/24116887/getting-cookie-stored-in-javascript-in-ruby-on-rails)
+#### Reference:
+* [Stackoverflow: getting-cookie-stored-in-javascript-in-ruby-on-rails](https://stackoverflow.com/questions/24116887/getting-cookie-stored-in-javascript-in-ruby-on-rails)
