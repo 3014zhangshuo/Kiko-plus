@@ -10,7 +10,7 @@ share: false
 ### Arrow function
 
 #### Common Syntax
-```
+```js
 (参数1, 参数2, …, 参数N) => { 函数声明 }
 //var test = (a, b) => { a+b }  #=> test(1,2) => undefined no return 3 must add return key word
 (参数1, 参数2, …, 参数N) => 表达式（单一）
@@ -29,7 +29,7 @@ share: false
 ```
 
 #### Advance Feature
-```
+```js
 # Parenthesize the body of function to return an object literal expression
 params => ({foo: bar})
 var object = { a: 1, b: 2 }
@@ -52,7 +52,7 @@ f() # => 6
 ```
 
 #### Shorter functions
-```
+```js
 var elements = [
   'Hydrogen',
   'Helium',
@@ -77,7 +77,7 @@ elements.map(({length}) => length)
 
 #### This
 
-```
+```js
 function Person() {
   // The Person() constructor defines `this` as an instance of itself.
   this.age = 0
@@ -122,7 +122,7 @@ f() === window // true
 
 #### Invoked through call or apply
 Since arrow functions do not have their own this, the methods `call()` or `apply()` can only pass in parameters. `thisArg` is ignored.
-```
+```js
 var adder = {
   base: 1,
 
@@ -147,7 +147,7 @@ console.log(adder.addThruCall(1)); // This would log to 2 still
 
 #### No binding of arguments
 Arrow functions do not have their own `arguments` object. Thus, in this example, arguments is simply a reference to the arguments of the enclosing scope:
-```
+```js
 var arguments = [1, 2, 3];
 var arr = () => arguments[0];
 
@@ -163,7 +163,7 @@ function foo(n) {
 foo(1); // 2
 ```
 
-```
+```js
 sendMessage(argu1, argu2)
 
 function sendMessage(name, message) {

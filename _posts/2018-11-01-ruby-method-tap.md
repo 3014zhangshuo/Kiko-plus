@@ -10,7 +10,7 @@ share: false
 #### The Tap Method : Yields self to the block, and then returns self.
 
 According to the achieve of ruby code :
-```
+```ruby
 def tap
   yield self
   self
@@ -18,12 +18,12 @@ end
 ```
 
 ##### Used to debug
-```
+```ruby
 (1..10).to_a.select {|x| x.even? }.tap {|x| puts "evens: #{x}" }.map {|x| x*x }.tap {|x| puts "squares: #{x}" }
 ```
 
 ##### Reduce temporary variable and concise code
-```
+```ruby
 user = User.new
 user.name = "John"
 user
@@ -33,7 +33,7 @@ user
 User.new.tap { |user| user.name = "John" }
 ```
 
-```
+```ruby
 # superclass method
 def self.new_with_session(params, session)
   new(params)

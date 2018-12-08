@@ -1,5 +1,5 @@
 
-```
+```ruby
 <<-SQL
         UPDATE wechat_official_accounts
         SET unionid = users.unionid
