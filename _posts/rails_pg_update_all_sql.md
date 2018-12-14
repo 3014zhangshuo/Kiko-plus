@@ -1,24 +1,31 @@
+---
+layout: post
+title: 'ActiveRecord: execute sql'
+date: 2018-11-29 00:24:00
+comments: true
+tags: [activerecord]
+share: false
+---
 
-```ruby
-<<-SQL
-        UPDATE wechat_official_accounts
-        SET unionid = users.unionid
-        FROM users WHERE wechat_official_accounts.user_id = users.id;
-      SQL
-
-      <<-SQL
-        UPDATE wechat_official_accounts
-        SET unionid = users.unionid
-        FROM wechat_official_accounts as accounts
-        INNER JOIN users
-        ON accounts.user_id = users.id;
-      SQL
-
-    ActiveRecord::Base.connection.execute(sql)
+```SQL
+UPDATE wechat_official_accounts
+SET unionid = users.unionid
+FROM users WHERE wechat_official_accounts.user_id = users.id;
 ```
 
-https://stackoverflow.com/questions/6005635/error-error-table-name-specified-more-than-once
+```SQL
+UPDATE wechat_official_accounts
+SET unionid = users.unionid
+FROM wechat_official_accounts as accounts
+INNER JOIN users
+ON accounts.user_id = users.id;
+```
 
-https://stackoverflow.com/questions/32113746/table-name-is-specified-more-than-once
+```ruby
+ActiveRecord::Base.connection.execute(sql)
+```
 
-https://semaphoreci.com/blog/2017/06/21/faster-rails-indexing-large-database-tables.html
+#### Reference
+* [](https://stackoverflow.com/questions/6005635/error-error-table-name-specified-more-than-once)
+* [](https://stackoverflow.com/questions/32113746/table-name-is-specified-more-than-once)
+* [](https://semaphoreci.com/blog/2017/06/21/faster-rails-indexing-large-database-tables.html)
