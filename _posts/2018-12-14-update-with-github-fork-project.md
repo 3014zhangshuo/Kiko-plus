@@ -8,20 +8,20 @@ share: false
 ---
 
 ### Configuring remote upstream
-```command
+```shell
 $ git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
 ```
 ### Syncing
-* fetch remote upstream updated
-```command
+#### fetch remote upstream updated
+```shell
 $ git fetch upstream
 ```
-* check to your want to merged branch
-```command
+#### check to your want to merged branch
+```shell
 $ git checkout master
 ```
-* merged it
-```command
+#### merged it
+```shell
 $ git merge upstream/master
 ```
 
