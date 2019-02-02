@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Rails: Callback others way'
+title: "Rails: Callback's others way"
 date: 2019-01-25 11:39:22
 comments: true
 tags: [rails ruby]
