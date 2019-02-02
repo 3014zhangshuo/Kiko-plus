@@ -38,6 +38,19 @@ share: false
 #### Run script
 `npm start`
 
+#### ReferenceError: Unknown plugin "transform-runtime"
+`npm install babel-plugin-transform-runtime --save-dev`
+```js
+// .babelrc
+
+{
+  "presets": ["env"],
++ "plugins": [
++   "transform-runtime"
++ ]
+}
+
+```
 
 ### Reference:
 * [how-can-i-use-an-es6-import-in-node](https://stackoverflow.com/questions/45854169/how-can-i-use-an-es6-import-in-node)
