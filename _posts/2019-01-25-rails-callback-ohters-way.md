@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Rails: Callback's others way'
-date: 2019-01-24 11:39:22
+date: 2019-01-25 11:39:22
 comments: true
 tags: [rails ruby]
 share: false
