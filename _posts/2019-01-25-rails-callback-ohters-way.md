@@ -72,6 +72,7 @@ end
 ### 更多的使用`after_commit`
 #### after_save
 > Is called after Base.save (regardless of whether it’s a create or update save). Note that this callback is still wrapped in the transaction around save. For example, if you invoke an external indexer at this point it won’t see the changes in the database.
+
 #### after_commit
 > This callback is called after a record has been created, updated, or destroyed.
 
