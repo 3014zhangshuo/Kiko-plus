@@ -3,7 +3,7 @@ layout: post
 title: "Rails: Set env variable without use gem"
 date: 2019-01-26 11:39:22
 comments: true
-tags: [rails ruby]
+tags: [rails, ruby]
 share: false
 ---
 
