@@ -6,7 +6,7 @@ comments: true
 tags: [rails]
 share: false
 ---
-> 为了阻止已关联的记录被删除，`ActiveRecord`提供了`restrict_with_exception`和`restrict_with_error`这两种方式。
+为了阻止已关联的记录被删除，`ActiveRecord`提供了`restrict_with_exception`和`restrict_with_error`这两种方式。
 
 ### restrict_with_exception
 ```ruby
