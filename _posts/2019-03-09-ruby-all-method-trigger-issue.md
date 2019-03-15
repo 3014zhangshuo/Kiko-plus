@@ -19,7 +19,7 @@ end
 但今天检查后台任务发现很多的发送任务都在retry，具体原因是发送的用户已经取关了。检查了记录取关的代码是正常工作的，仔细看上面的代码发现如果`accounts`为空时会不会返回的是`true`，一试果然，本来的直觉认为是`false`。
 
 ### all?
-> Passes each element of the collection to the given block. The method returns true if the block never returns false or nil. If the block is not given, Ruby adds an implicit block of {|obj| obj} (that is all? will return true only if none of the collection members are false or nil.)
+*Passes each element of the collection to the given block. The method returns true if the block never returns false or nil. If the block is not given, Ruby adds an implicit block of {|obj| obj} (that is all? will return true only if none of the collection members are false or nil.)*
 
 如果调用对象为空时，`block`是不会被执行的，不会返回`nil`或者`false`，`all?`方法就会返回`true`。
 
@@ -31,7 +31,7 @@ end
 ```
 
 ### any?
-> Passes each element of the collection to the given block. The method returns true if the block ever returns a value other than false or nil. If the block is not given, Ruby adds an implicit block of {|obj| obj} (that is any? will return true if at least one of the collection members is not false or nil.
+*Passes each element of the collection to the given block. The method returns true if the block ever returns a value other than false or nil. If the block is not given, Ruby adds an implicit block of {|obj| obj} (that is any? will return true if at least one of the collection members is not false or nil.*
 
 `accounts.any?`没有给定执行的`block`，`ruby`会添加一个隐形的`block`。`any?`返回`true`需要`block`返回非`nil`或者`false`，由于`accounts`为空，`block`没有被执行，`any?`返回`false`。
 
