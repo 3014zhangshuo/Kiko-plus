@@ -7,7 +7,7 @@ tags: [编程原则]
 share: false
 ---
 
->> 类或者方法，对扩展是开放的，对修改是关闭的。
+> 类或者方法，对扩展是开放的，对修改是关闭的。
 
 ```ruby
 class UsageFileParser
