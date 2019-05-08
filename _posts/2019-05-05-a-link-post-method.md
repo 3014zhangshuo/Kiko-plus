@@ -90,8 +90,8 @@ Rails.handleMethod = (e) ->
 rails为请求加入了`_method`参数，是用来内部实现`RESTful`设计的。
 
 #### 参考
-[怎样使用a标签以post方式提交]("https://blog.csdn.net/LZGS_4/article/details/43156133")
-[Rails-ujs](https://github.com/rails/rails/blob/master/actionview/app/assets/javascripts/rails-ujs)
+* [怎样使用a标签以post方式提交]("https://blog.csdn.net/LZGS_4/article/details/43156133")
+* [Rails-ujs](https://github.com/rails/rails/blob/master/actionview/app/assets/javascripts/rails-ujs)
 
 
 
