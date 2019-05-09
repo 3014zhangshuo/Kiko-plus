@@ -7,7 +7,7 @@ tags: []
 share: false
 ---
 
-vim ~/.ssh/config 打开当前用户ssh配置文件，文件默认为空。
+`vim ~/.ssh/config`打开当前用户ssh配置文件，文件默认为空。
 
 基本配置样例：
 
