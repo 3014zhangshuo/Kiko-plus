@@ -6,7 +6,8 @@ comments: true
 tags: [ruby]
 share: true
 ---
-在ruby中方法都可以接收一段匿名的`block`代码，申明`block`的方式为`{}`和`do...end`，`{}`对方法的绑定关系上强于`do...end`。
+在ruby中方法都可以接收一段匿名的`block`代码，申明`block`的方式为`{}`或`do...end`，`{}`对方法的绑定关系上强于`do...end`。
+
 例如：
 
 下面代码可以得到想要的结果，代码块绑定在`map`方法上
