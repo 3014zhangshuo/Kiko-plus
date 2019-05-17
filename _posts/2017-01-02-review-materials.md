@@ -3,7 +3,10 @@ layout: post
 title: '回顾往期教材'
 date: 2017-01-02 10:37
 comments: true
-categories: 
+categories:
 ---
-更换gem来源
-gem sources --add https://gems.ruby-china.org/ --remove https://rubygems.org/
+更换gem镜像
+
+```shell
+gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/
+```
