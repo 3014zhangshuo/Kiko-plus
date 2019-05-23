@@ -6,8 +6,12 @@ comments: true
 tags: [CSS]
 share: false
 ---
-```
+
+```css
 display: inline;
 float: left;
 ```
-[S](https://stackoverflow.com/questions/10540446/how-do-i-keep-two-divs-on-the-same-line)
+
+### 参考：
+
+[how-do-i-keep-two-divs-on-the-same-line](https://stackoverflow.com/questions/10540446/how-do-i-keep-two-divs-on-the-same-line)
