@@ -1,34 +1,41 @@
 ---
 layout: post
-title: '方法:how to create multiple submit buttons for the same form'
-date: 2016-12-31 13:19
+title: 'Rails: 使用不同的submit commit处理业务逻辑'
+date: 2016-12-31
 comments: true
-categories: 
+tags: [rails]
 ---
-表单的写法
-```
-<% form_for(something) do |f| %>
-    ..
-    <%= f.submit 'A' %>
-    <%= f.submit 'B' %>
-    ..
+
+### 表单的写法
+
+```ruby
+<% form_for(@object) do |f| %>
+    ...
+    <%= f.submit '保存' %>
+    <%= f.submit '发送' %>
+    ...
 <% end %>
 ```
-在web的显示
+
+### 渲染出来的HTML
+
+```html
+<input type="submit" value="保存" name="commit" />
+<input type="submit" value="发送" name="commit" />
 ```
-<input type="submit" value="A" id=".." name="commit" />
-<input type="submit" value="B" id=".." name="commit" />
-```
-在controller里面就可以这么改
-```
-def <controller action>
-    if params[:commit] == 'A'
-        # A was pressed 
-    elsif params[:commit] == 'B'
-        # B was pressed
-    end
+
+### 在controller里面就可以这么调用
+
+```ruby
+def update
+  if params[:commit] == '保存'
+    do_save
+  elsif params[:commit] == '发送'
+    do_send
+  end
 end
 ```
 
-[1](http://stackoverflow.com/questions/3027149/how-do-i-create-multiple-submit-buttons-for-the-same-form-in-rails)
-[]()
+### 参考
+
+[how-do-i-create-multiple-submit-buttons-for-the-same-form-in-rails](http://stackoverflow.com/questions/3027149/how-do-i-create-multiple-submit-buttons-for-the-same-form-in-rails)

@@ -1,20 +1,24 @@
 ---
 layout: post
-title: 'Google cloud 服务器搭建'
-date: 2016-12-23 12:31
+title: '使用Google Cloud搭建shadowsocks'
+date: 2016-12-23
 comments: true
-categories: 
+tags: [教程]
 ---
-sudo passwd root  /设置管理员密码/
+```shell
+sudo passwd root mypassword # 设置root用户密码
 
-su  /管理员登录/
+su # 管理员登录
 
-apt-get install python-pip
+apt-get install python-pip # 安装python-pip
 
-pip install shadowsocks
+pip install shadowsocks # 安装shadowsocks
 
-sudo ssserver -p 443 -k password -m aes-256-cfb --user nobody -d start
+sudo ssserver -p 443 -k password -m aes-256-cfb --user nobody -d start # 开启shadowsocks
 
-dns-server=119.29.29.29, 223.5.5.5, 114.114.114.114
+dns-server=119.29.29.29, 223.5.5.5, 114.114.114.114 # 设置DNS
+```
 
-https://github.com/shadowsocks/shadowsocks/tree/master
+### 参考：
+
+[github-shadowsocks](https://github.com/shadowsocks/shadowsocks/tree/master)
