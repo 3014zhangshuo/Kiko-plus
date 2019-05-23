@@ -1,12 +1,12 @@
 ---
 layout: post
-title: '方法：修改显示时区'
-date: 2016-12-01 15:42
+title: 'Rails：修改显示北京时区'
+date: 2016-12-01
 comments: true
-categories: 
+tags: [rails]
 ---
-  #####很简单，在config/environments加入下面两行就可以了
-  ```
-  config.active_record.default_timezone = :local
-  config.time_zone = 'Beijing'
-  ```
+在`config/environments`加入下面两行就可以了
+```ruby
+config.active_record.default_timezone = :local
+config.time_zone = "Beijing"
+```
