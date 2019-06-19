@@ -1,9 +1,11 @@
 ---
 layout: post
-title: 'NPM - Install specific version'
-date: 2018-06-21 00:00:00
+title: '安装指定版本的npm包'
+date: 2018-06-21
 comments: true
-tags: [NodeJS]
-share: false
+tags: [npm]
 ---
-`npm install [package]@[version]`
+
+```shell
+npm install [package]@[version]
+```
