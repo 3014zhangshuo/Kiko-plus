@@ -4,7 +4,6 @@ title: "Nginx 无法正常重启"
 date: 2019-04-19 21:39:22
 comments: true
 tags: [nginx]
-share: false
 ---
 
 #### 正常情况可以使用下面命令进行重启，调用/etc/init.d/nginx脚本
@@ -21,6 +20,7 @@ $ sudo nginx
 ```
 
 #### 出现命令无法重启的情况，kill掉nginx主进程再启动
+
 *注意不能用kill -9杀掉进程，nginx启动时有子进程*
 
 ```shell

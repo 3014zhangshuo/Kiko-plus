@@ -4,7 +4,6 @@ title: 'OPEN/CLOSED PRINCIPLE'
 date: 2019-04-26 11:39:22
 comments: true
 tags: [编程原则]
-share: false
 ---
 
 > 类或者方法，对扩展是开放的，对修改是关闭的。
@@ -106,6 +105,7 @@ end
 ```
 
 ### Reference
+
 * [Ruby 面向对象编程之 SOLID](https://ruby-china.org/topics/38441)
 * [Back to Basics: SOLID](https://thoughtbot.com/blog/back-to-basics-solid)
 * [写了这么多年代码，你真的了解SOLID吗？](https://insights.thoughtworks.cn/do-you-really-know-solid/)

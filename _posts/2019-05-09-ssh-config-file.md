@@ -4,7 +4,6 @@ title: 'ssh config file'
 date: 2019-05-08
 comments: true
 tags: []
-share: false
 ---
 
 `vim ~/.ssh/config`打开当前用户ssh配置文件，文件默认为空。

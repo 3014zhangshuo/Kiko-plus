@@ -4,12 +4,13 @@ title: "HTML中a标签如何实现post请求的"
 date: 2019-05-05
 comments: true
 tags: [原理]
-share: true
 ---
+
 今天查看rails是如何为`link_to`中post请求加上`authenticity_token`才发现a链接不是天然就支持post请求的,
 是需要经过代码处理才可以。下面列出2种实现方式，rails使用的是创建表单的方式。
 
 #### 创建表单方式
+
 ```html
 <a href="javascript:doPost("addStudent.action", {"name":"张三"})">提交</a>
 ```
@@ -35,6 +36,7 @@ function doPost(action, params) {
 ```
 
 #### 使用ajax的方式（比较常用）
+
 ```html
 <a href="addStudent.action" class="a_post">提交</a>
 ```
@@ -55,6 +57,7 @@ $(".a_post").on("click",function(event){
 ```
 
 #### Rails 是如何实现的
+
 ```ruby
 link_to "This is post link", post_url, method: :post
 # <a href="/post" data-method="post" rel="nofollow"><This is post link</a>
@@ -90,6 +93,7 @@ Rails.handleMethod = (e) ->
 rails为请求加入了`_method`参数，是用来内部实现`RESTful`设计的。
 
 #### 参考
+
 * [怎样使用a标签以post方式提交]("https://blog.csdn.net/LZGS_4/article/details/43156133")
 * [Rails-ujs](https://github.com/rails/rails/blob/master/actionview/app/assets/javascripts/rails-ujs)
 

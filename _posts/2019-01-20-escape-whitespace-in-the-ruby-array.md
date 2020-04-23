@@ -2,11 +2,11 @@
 layout: post
 title: 'Ruby: Escape whitespace in the ruby array by %w'
 date: 2019-01-20 11:39:22
-comments: true
 tags: [ruby]
-share: false
 ---
+
 ### Space between words
+
 ```ruby
 # expect
 ['a', 'b c']
@@ -15,7 +15,9 @@ share: false
 # %w with escape
 %w[a b\ c]
 ```
+
 ### Empty space
+
 ```ruby
 # expect
 ['a', ' ', 'c']
@@ -26,4 +28,5 @@ share: false
 ```
 
 ### Reference:
+
 [space-in-the-ruby-array-by-w](https://stackoverflow.com/questions/4064062/space-in-the-ruby-array-by-w)
