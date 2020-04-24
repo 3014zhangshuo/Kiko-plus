@@ -111,4 +111,126 @@ SELECT name, species, birth FROM pet WHERE species = 'dog' OR species = 'cat';
 SELECT name, birth FROM pet ORDER BY birth;
 
 SELECT name, birth FROM pet ORDER BY birth DESC;
+
+SELECT name, species, birth FROM pet ORDER BY species, birth DESC;
 ```
+
+#### 一些运算
+
+```
+SELECT name, birth, CURDATE(), TIMESTAMPDIFF(YEAR, birth, CURDATE()) AS age FROM pet;
+
+
+SELECT name, birth, CURDATE(), TIMESTAMPDIFF(YEAR, birth, CURDATE()) AS age FROM pet ORDER BY age;
+
+
+SELECT name, birth, death, TIMESTAMPDIFF(YEAR, birth, death) AS age FROM pet WHERE death IS NOT NULL ORDER BY age;
+```
+
+#### 一些时间的格式化
+
+```
+# YEAR(), MONTH(), DAYOFMONTH()
+
+SELECT name, birth, MONTH(birth) FROM pet;
+
+SELECT name, birth FROM pet WHERE MONTH(birth) = 5;
+
+SELECT name, birth FROM pet WHERE MONTH(birth) = MONTH(DATE_ADD(CURDATE(), INTERVAL 1 MONTH));
+
+# MOD(N, M) returns the remainder of N divided by M;
+SELECT name, birth FROM pet WHERE MONTH(birth) = MOD(MONTH(CURDATE()), 12) + 1;
+SELECT MOD(1, 12); # => 1
+
+SELECT '2019-04-04' + INTERVAL 1 MONTH;
+SELECT '2019-04-31' + INTERVAL 1 DAY;
+SHOW WARNINGS:
+```
+
+### NULL
+
+```
+SELECT 1 IS NULL, 1 IS NOT NULL; # returns 0 1
+
+SELECT 1 = NULL, 1 <> NULL, 1 < NULL, 1 > NULL; # returns all NULL
+
+SELECT 0 IS NULL, 0 IS NOT NULL, '' IS NULL, '' IS NOT NULL; # returns 0 1 0 1
+```
+
+### 匹配
+
+```
+# beginning with b
+SELECT * FROM pet WHERE name LIKE 'b%';
+
+# ending with fy
+SELECT * FROM pet WHERE name LIKE '%fy';
+
+# containing a w
+SELECT * FROM pet WHERE name LIKE '%w%';
+
+# find names containing exactly five characters
+SELECT * FROM pet WHERE name LIKE '_____';
+
+# beginning with b
+SELECT * FROM pet WHERE name REGEXP '^b';
+
+# to force case-sensitive
+SELECT * FROM pet WHERE name REGEXP BINARY '^b';
+
+# ending with fy
+SELECT * FROM pet WHERE name REGEXP 'fy$';
+
+# containing a w
+SELECT * FROM pet WHERE name REGEXP 'w';
+
+# find name containing exactly five characters
+SELECT * FROM pet WHERE name REGEXP '^.....$';
+SELECT * FROM pet WHERE name REGEXP '^.{5}$'
+```
+
+### 统计和分组
+
+```
+SELECT COUNT(*) FROM pet;
+
+SELECT owner, COUNT(*) FROM pet GROUP BY owner;
+
+SELECT species, COUNT(*) FROM pet GROUP BY species;
+
+SELECT sex, COUNT(*) FROM pet GROUP BY sex;
+
+SELECT species, sex, COUNT(*) FROM pet GROUP BY species, sex;
+
+SELECT species, sex, COUNT(*) FROM pet WHERE species = 'dog' OR species = 'cat' GROUP BY species, sex;
+
+SELECT species, sex, COUNT(*) FROM pet WHERE sex IS NOT NULL GROUP BY species, sex;
+```
+
+#### ONLY_FULL_GROUP_BY
+
+```
+SET sql_mode = 'ONLY_FULL_GROUP_BY';
+
+SELECT owner, COUNT(*) FROM pet; # => ERROR
+
+SET sql_mode = '';
+
+SELECT owner, COUNT(*) FROM pet;
+```
+
+### Join
+
+```
+CREATE TABLE event (name VARCHAR(20), date DATE, type VARCHAR(15), remark VARCHAR(255));
+
+LOAD DATA LOCAL INFILE '~/event.txt' INTO TABLE event;
+
+SELECT pet.name, TIMESTAMPDIFF(YEAR, brith, date) AS age, remark FROM pet INNER JOIN event ON pet.name = event.name WHERE event.type = 'litter';
+
+SELECT p1.name, p1.sex, p2.name, p2.sex, p1.species FROM pet AS p1 INNER JOIN pet AS p2 ON p1.species = p2.species AND p1.sex = 'f' AND p1.death IS NULL AND p2.sex = 'm' AND p2.death IS NULL;
+```
+
+---
+
+* https://dev.mysql.com/doc/refman/5.7/en/tutorial.html
