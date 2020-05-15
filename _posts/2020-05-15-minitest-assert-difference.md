@@ -8,7 +8,7 @@ tags: [rails minitest]
 之前写 `Rspec` 有很方便的方法来判断数据是否增加，增加几条：
 
 ```
-expect { User.from_wx_pub!(auth) }.to change { User.count }.by(0)
+expect { User.from_wx_pub!(auth) }.to change { User.count }.by(1)
 ```
 
 `Minitest` 对应的方法是 `assert_difference`，用法如下：
