@@ -61,6 +61,12 @@ INSERT INTO pet VALUES ('Puffball', 'Diane', 'hamster', 'f', '1990-03-30', NULL)
 LOAD DATA LOCAL INFILE '~/pet.text' INTO TABLE pet;
 ```
 
+#### 删除数据
+
+```
+DELETE FROM pet WHERE name = 'Puffball';
+```
+
 ### 获取表中信息
 
 #### 获取全部数据
