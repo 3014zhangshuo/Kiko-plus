@@ -7,17 +7,17 @@ tags: [rails]
 
 ### 添加数据库 index 的几种方法：
 
-```
+```ruby
 create_table :users do |t|
   t.integer :group_id, index: true
 end
 ```
 
-```
+```ruby
 add_column :users, :name, index: true
 ```
 
-```
+```ruby
 add_index :users, :name
 ```
 
@@ -27,7 +27,7 @@ add_index :users, :name
 
 #### 但是有两个特例，这两种添加 `index` 的方式是奏效的：
 
-```
+```ruby
 create_table :users do |t|
   t.references :group, index: true
 end
@@ -37,7 +37,7 @@ add_reference :users, :group, index: true
 
 ##### 源码分别是：
 
-```
+```ruby
 #lib/active_record/connection_adapters/abstract/schema_definitions.rb
 
 def references(*args)
@@ -54,7 +54,7 @@ end
 
 *alias belongs_to*
 
-```
+```ruby
 #lib/active_record/connection_adapters/abstract/schema_statements.rb
 
 def add_reference(table_name, ref_name, options = {})
@@ -71,7 +71,7 @@ end
 
 ##### 源码如下：
 
-```
+```ruby
 #lib/active_record/connection_adapters/abstract/schema_definitions.rb
 
 def column(name, type, options = {})
@@ -144,7 +144,7 @@ end
 
 > 除去其他的写法，给自己定了风格，今后会遵循使用下面的方式来添加数据库 `index`。
 
-```
+```ruby
 create_table :users do |t|
   t.string :name
 
