@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ruby module_function"
+title: "Ruby: module_function"
 date: 2020-05-23
 tags: [ruby]
 ---

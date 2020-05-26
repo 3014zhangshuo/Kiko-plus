@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "PG describe table"
+title: "PG: describe table"
 date: 2020-05-22
 tags: [pg]
 ---
