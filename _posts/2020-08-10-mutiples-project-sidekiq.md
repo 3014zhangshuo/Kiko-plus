@@ -2,7 +2,7 @@
 layout: post
 title: "项目拆解之 sidekiq"
 date: 2020-08-08
-tags: [ruby sidekiq rails]
+tags: [ruby, sidekiq, rails]
 ---
 
 #### 前提：
