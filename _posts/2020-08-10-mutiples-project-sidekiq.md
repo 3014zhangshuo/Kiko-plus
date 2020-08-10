@@ -11,8 +11,7 @@ tags: [ruby sidekiq rails]
 * `proj_A` redis connection pool: `proj_A_redis`
 * `proj_A` 上有一个 sidekiq worker: `SendMessageWorker`
 
-`SendMessageWorker` 生成一条消息发送给用户，消息内容生成强依赖在 `proj_A` 上的 `models`
-
+`SendMessageWorker` 生成一条消息发送给用户，消息内容生成强依赖在 `proj_A` 上的 `models` 中的方法
 
 #### 想要做
 
