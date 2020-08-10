@@ -2,7 +2,7 @@
 layout: post
 title: "Rails create_table sql"
 date: 2020-05-18
-tags: [rails sql]
+tags: [rails, sql]
 ---
 
 ```

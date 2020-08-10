@@ -2,7 +2,7 @@
 layout: post
 title: "浏览器恢复滚动行为"
 date: 2020-08-08
-tags: [browser js]
+tags: [browser, js]
 ---
 
 ```js

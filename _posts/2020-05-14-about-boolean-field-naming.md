@@ -2,7 +2,7 @@
 layout: post
 title: "关于 boolean column 命名问题"
 date: 2020-05-14
-tags: [ruby rails style]
+tags: [ruby, rails, code-style]
 ---
 
 开始学 `rails` 的时候被教导过 `boolean column` 的名字要以 `is_` 做前缀，像这样 `is_admin`。

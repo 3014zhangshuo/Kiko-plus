@@ -2,7 +2,7 @@
 layout: post
 title: "查看 migrate 具体执行的 SQL"
 date: 2020-05-18
-tags: [rails sql]
+tags: [rails, sql]
 ---
 
 ```

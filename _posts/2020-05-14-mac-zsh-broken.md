@@ -2,7 +2,7 @@
 layout: post
 title: "输入 source ~/.zshrc 后 shell 环境崩溃"
 date: 2020-05-14
-tags: [zsh shell]
+tags: [zsh, shell]
 ---
 
 今天手贱在终端输入了 `source ~/.zshrc`，发现什么命令都用不了了。

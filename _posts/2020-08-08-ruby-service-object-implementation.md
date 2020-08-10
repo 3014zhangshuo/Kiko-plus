@@ -2,7 +2,7 @@
 layout: post
 title: "Rails: ServiceObject"
 date: 2020-08-08
-tags: [ruby rails]
+tags: [ruby, rails]
 ---
 
 

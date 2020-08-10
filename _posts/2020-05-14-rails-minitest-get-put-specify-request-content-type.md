@@ -2,7 +2,7 @@
 layout: post
 title: "Minitest request 指定 Content-Type 为 json"
 date: 2020-05-14
-tags: [rails ruby]
+tags: [rails, ruby]
 ---
 
 ```

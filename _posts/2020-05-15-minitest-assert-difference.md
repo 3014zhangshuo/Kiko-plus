@@ -2,7 +2,7 @@
 layout: post
 title: "Minitest assert_difference"
 date: 2020-05-15
-tags: [rails minitest]
+tags: [rails, minitest]
 ---
 
 之前写 `Rspec` 有很方便的方法来判断数据是否增加，增加几条：

@@ -2,7 +2,7 @@
 layout: post
 title: "Rails Minitest: Mock controller method"
 date: 2020-05-26
-tags: [rails minitest]
+tags: [rails, minitest]
 ---
 
 ```ruby

@@ -2,7 +2,7 @@
 layout: post
 title: "安装 Vscode Command Line"
 date: 2020-05-14
-tags: [vscode tool]
+tags: [vscode, tool]
 ---
 
 在 `bash_profile` 加入：

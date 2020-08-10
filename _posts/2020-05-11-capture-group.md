@@ -2,7 +2,7 @@
 layout: post
 title: "Capture Group(捕获组)"
 date: 2020-05-11
-tags: [ruby regexp]
+tags: [ruby, regexp]
 ---
 
 * 普通捕获组：`(Expression)`
