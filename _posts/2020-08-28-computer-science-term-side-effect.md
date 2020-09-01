@@ -2,7 +2,7 @@
 layout: post
 title: "编程中的 'side effect' 是指的什么？"
 date: 2020-08-28
-tags: [computer-science term]
+tags: [computer-science, term]
 ---
 
 `side effect` 直译是副作用，那么什么是编程中的副作用？
