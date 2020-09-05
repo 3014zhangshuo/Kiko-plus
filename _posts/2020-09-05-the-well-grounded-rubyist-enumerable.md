@@ -39,10 +39,28 @@ r.one? { |n| n == 5 } # => TypeError: can't iterate from Float
 # 起始点是整数可以迭代
 r = Range.new(1, 10.0)
 r.one? { |n| n == 5 } # => true
+
+# 浮点数可以用 step 来迭代
+r = Range.new(1.0, 10.0)
+r.step(0.1) { |f| puts f }
 ```
 
 这是为什么呢？我理解浮点数的范围是无限的，对它做 `each` 操作是无意义的。
 为什么起始点是整数就可以，调用 `each` 的时候是把范围看做整数的集合的。
+
+补充纠正为什么 `float range` 不能 `Range.each`，因为 `Range.each` 依赖 `succ` （例如：`Integer#succ`），而 `Float` 并没有实现这个方法，下面我们用一个花哨的方法让 `float range` 支持迭代：
+
+```ruby
+class Float
+  alias succ next_float
+end
+
+r = Range.new(1.0, 10.0)
+r.each { |f| puts f }
+```
+
+* [can-ruby-have-a-range-starting-with-a-float](https://stackoverflow.com/questions/43190251/can-ruby-have-a-range-starting-with-a-float)
+* [Range#method-i-each](https://ruby-doc.org/core-2.4.1/Range.html#method-i-each)
 
 #### find 的一种特例
 
