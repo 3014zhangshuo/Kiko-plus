@@ -36,9 +36,9 @@ alpha[2, 0] = %w[X Y] # => ["a", "b", "X", "Y", "c", "d", "e", "f"]
 
 #### 作为集合
 
-* 交集 ary = ary1 & ary2
-* 并集 ary = ary1 | ary2
-* 集合的差 ary = ary1 - ary2
+* 交集 `ary = ary1 & ary2`
+* 并集 `ary = ary1 | ary2`
+* 集合的差 `ary = ary1 - ary2`
 
 ##### “|” 与 “+” 的不同点
 
