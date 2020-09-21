@@ -102,19 +102,19 @@ undef :hi # => NameError (undefined method `hi' for class `Object')
 
 #### 赋值运算符
 
-* &&=
-* ||=
-* ^=
-* &=
-* |=
-* <<=
-* >>=
-* +=
-* -=
-* *=
-* /=
-* %=
-* **=
+* `&&=`
+* `||=`
+* `^=`
+* `&=`
+* `|=`
+* `<<=`
+* `>>=`
+* `+=`
+* `-=`
+* `*=`
+* `/=`
+* `%=`
+* `**=`
 
 #### 重新定义一元运算符
 
@@ -235,10 +235,10 @@ pb(b << 3)         # => 10000000 位左移
 
 #### 计数
 
-* n.times { |i| ... }
-* from.upto(to) { |i| ... }
-* from.downto(to) { |i| ... }
-* from.step(to, step) { ... } step不传就是from处理结果
+* `n.times { |i| ... }`
+* `from.upto(to) { |i| ... }`
+* `from.downto(to) { |i| ... }`
+* `from.step(to, step) { ... }` step不传就是from处理结果
 
 #### Here Document
 
