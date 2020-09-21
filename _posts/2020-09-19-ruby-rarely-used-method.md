@@ -100,7 +100,7 @@ undef hi
 undef :hi # => NameError (undefined method `hi' for class `Object')
 ```
 
-#### 赋值运算符
+#### **赋值运算符**
 
 * `&&=`
 * `||=`
@@ -214,7 +214,7 @@ end
       + Errno::EPERM
       + Errno::ENONET
 
-#### 位运算 **
+#### **位运算**
 
 ```ruby
 def pb(i)
