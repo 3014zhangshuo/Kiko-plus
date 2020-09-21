@@ -16,10 +16,10 @@ p alpha[2, 3] # => ["c", "d", "e"]
 
 从某个元素开始，获取多个元素
 
-* a.at(n)         # 与 a[n] 等价
-* a.slice(n)      # 与 a[n] 等价
-* a.slice(n..m)   # 与 a[n..m] 等价
-* a.slice(n, len) # 与 a[n, len] 等价
+* `a.at(n)`         # 与 a[n] 等价
+* `a.slice(n)`      # 与 a[n] 等价
+* `a.slice(n..m)`   # 与 a[n..m] 等价
+* `a.slice(n, len)` # 与 a[n, len] 等价
 
 #### 元素赋值
 
@@ -31,7 +31,7 @@ alpha[2, 3] = %w[C D E] # => ["a", "b", "C", "D", "E", "f"]
 alpha[2, 3] = %w[C D E] # => ["a", "b", "C", "D", "E", "F", "f"]
 
 # 指定 [n, 0] 后，就会在索引值为 n 的元素前插入新元素
-alpha[2, 0] = %w[X Y]
+alpha[2, 0] = %w[X Y] # => ["a", "b", "X", "Y", "c", "d", "e", "f"]
 ```
 
 #### 作为集合
