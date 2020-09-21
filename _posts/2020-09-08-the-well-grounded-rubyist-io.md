@@ -24,6 +24,13 @@ f.pos # => 0
 f.gets # => 'hello\n'
 ```
 
+#### File.expand_path
+
+```ruby
+p Dir.pwd                 # => "/usr/local"
+p File.expand_path("bin") # => "/usr/local/bin"
+```
+
 #### File#seek
 
 ```ruby
