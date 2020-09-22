@@ -23,3 +23,4 @@ tags: [mysql]
 
 * [【MySQL技术内幕】5.5-Cardinality值](https://juejin.im/post/6844904133800296455)
 * [关于索引cardinality的知识](https://blog.csdn.net/shi_yi_fei/article/details/51659364)
+* [updating-innodb-table-statistics-manually](https://www.percona.com/blog/2017/09/11/updating-innodb-table-statistics-manually/)
