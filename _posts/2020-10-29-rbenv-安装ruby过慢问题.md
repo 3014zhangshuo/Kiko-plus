@@ -19,4 +19,5 @@ RUBY_BUILD_HTTP_CLIENT=curl rbenv install 2.3.3
 ```
 ---
 
+* [Ruby 源代码镜像服务](https://ruby-china.org/wiki/ruby-mirror)
 * [解决rbenv install安装过慢的问题](https://blog.csdn.net/shine_a/article/details/103927374)
